@@ -25,10 +25,8 @@ namespace MpcHcDotNet {
         }
         #endregion
 
-        #region Imports
         [DllImport("user32.dll")]
         private static extern int SendMessage(IntPtr hWnd, uint msg, IntPtr wParam, IntPtr lParam);
-        #endregion
 
         #region Events
         public event LogHandler NewLogMessage;
